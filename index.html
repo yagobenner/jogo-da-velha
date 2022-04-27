@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    
+<header>
+   <div class="titulo"><h1>Jogo da Velha</h1></div>
+   
+</header>
+
+<div class="display-flex">
+    
+    <div>
+            <div class="jogador">
+                <label>
+                     Jogador: 
+                </label>
+                <label id="jogador-selecionado">
+                    
+                 </label>
+            </div>
+            <div class="vencedor">
+                <label>
+                    Vencedor: 
+                </label>
+                <label id="vencedor-selecionado">
+
+                </label>
+            </div>        
+    </div>
+    <div class="quadrado-grande">
+        <div>
+            <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        </div>
+
+        <div>
+            <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        </div>
+
+        <div>
+            <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+            <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        </div>    
+    </div>    
+    <div>
+        <button onclick="reiniciar()">
+            Nova Partida
+        </button>
+    </div>
+</div>    
+<script src="jogo.js"></script>
+</body>
+</html>
